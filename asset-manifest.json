@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.85ff7104.css",
+    "main.js": "/portfolio/static/js/main.4d815d8e.js",
+    "static/js/787.108d46ac.chunk.js": "/portfolio/static/js/787.108d46ac.chunk.js",
+    "static/media/skillImage.jpg": "/portfolio/static/media/skillImage.c44e3a7342a3825a41f8.jpg",
+    "static/media/sheik.png": "/portfolio/static/media/sheik.c79f18afd0fa464f3311.png",
+    "static/media/aerialView.png": "/portfolio/static/media/aerialView.2e8114ceddcfe120b6ec.png",
+    "static/media/Sheik_Mohammed_kothari_Resume_.pdf": "/portfolio/static/media/Sheik_Mohammed_kothari_Resume_.d09cd310deb4f66f416a.pdf",
+    "static/media/photo-1.png": "/portfolio/static/media/photo-1.8e6bae2b04f7b25f5710.png",
+    "static/media/overlay-text.png": "/portfolio/static/media/overlay-text.59af11da7958ca7b624b.png",
+    "static/media/Logo.svg": "/portfolio/static/media/Logo.eebf625d5fd2f8683aab18dfe72ea4ad.svg",
+    "index.html": "/portfolio/index.html",
+    "main.85ff7104.css.map": "/portfolio/static/css/main.85ff7104.css.map",
+    "main.4d815d8e.js.map": "/portfolio/static/js/main.4d815d8e.js.map",
+    "787.108d46ac.chunk.js.map": "/portfolio/static/js/787.108d46ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85ff7104.css",
+    "static/js/main.4d815d8e.js"
+  ]
+}
