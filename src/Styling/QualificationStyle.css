@@ -1,0 +1,224 @@
+.qualification-q {
+    width: 100%;
+    padding: 5rem 0;
+}
+.head-q {
+    width: 100%;
+    border-left: 4px solid var(--bg-color);
+    padding: 0 10px;
+    border-radius: 5px ;
+}
+.sample-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding-bottom: .5rem;
+    width: 100%;
+} 
+
+.sample-heading h3 {
+    width: 100%;
+    color: var(--font-color);
+    font-size: 2.5rem;
+    text-align:center;
+}
+.sample-heading h4 {
+    width: 100%;
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.title-q {
+    color: var(--bg-color);
+    text-transform: uppercase;
+}
+
+
+.content-s span {
+    font-weight: 500;
+    text-align: center;
+}
+
+.sright .content-s div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    column-gap:5px;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 400;
+}
+
+.sleft .content-s div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 400;
+}
+
+
+.content-s h4 {
+    color: var(--font-Main);
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.timeline-s {
+    position: relative;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.timeline-s::after {
+    content: ' ';
+    position: absolute;
+    width: 5px;
+    background-image: linear-gradient(to bottom,#20BF55,#01BAEF);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 5px;
+}
+
+.container-s {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container-s::after {
+  content: ' ';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.sleft {
+    left: 0;
+}
+
+.sleft .content-s {
+    
+    text-align: right;
+}
+
+.sright {
+    left: 50%;
+}
+
+.sright .content-s {
+    text-align: left;
+}
+
+.sleft::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--font-color);
+}
+
+.sright::before {
+    content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--font-color) transparent transparent;
+}
+
+.sright::after {
+    left: -16px;
+
+}
+
+.content-s {
+    height: auto;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 4px 4px 25px rgba(51,51,51,0.392);
+    border-radius: 10px;
+    margin-bottom:30px ;
+    position: relative;
+
+    /* overflow: hidden; */
+  }
+
+  /* ------ media Query ------- */
+    /* Place the timelime to the left */
+   @media screen and (max-width: 700px) {
+
+    .skills {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .timeline-s::after {
+        display: flex;
+        align-items: center;
+        left: 31px;
+    } 
+
+    .sleft .content-s {
+        overflow: hidden;
+    }
+    
+    /* Full-width containers */
+    .container-s {
+    width: auto;
+    padding-left: 70px;
+    padding-right: 25px;
+    } 
+    
+    /* Make sure that all arrows are pointing leftwards */
+     .container-s::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #FF9F55 transparent transparent;
+    } 
+
+    .sleft .content-s {
+        width: auto;
+        text-align: left;
+    }
+
+    .content-s {
+        width: 100%;
+    }
+    .sleft .content-s div {
+        justify-content: flex-start;
+    }
+  
+    /* Make sure all circles are at the same spot */
+     .sleft::after, .sright::after {
+    left: 15px;
+    } 
+    
+    /* Make all right containers behave like the left ones */
+     .sright {
+    left: 0%;
+    }
+  } 
